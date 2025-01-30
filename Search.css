@@ -1,0 +1,268 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  width: 393px;
+  height: 852px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: black;
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+.previous-icon {
+  position: absolute;
+  top: 75px;
+  left: 22px;
+  width: auto;
+  height: auto;
+}
+
+.search-box {
+  position: absolute;
+  top: 66px;
+  left: 61px;
+  width: 310px;
+  height: 35px;
+  background-color: #323232;
+  border-radius: 5px;
+  color: #818181;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; 
+  text-align: left; 
+  padding-left: 10px; 
+  overflow: hidden;
+}
+
+.search-box span {
+  color: inherit;
+  margin-left: 10px; 
+}
+
+
+.graysearch-icon.hidden {
+  display: none; 
+}
+
+.graysearch-icon.visible {
+  display: block; 
+}
+
+
+.deselect-icon {
+  position: absolute;
+  top: 71px;
+  right: 20px;
+  width: auto;
+  height: auto;
+}
+
+/* 키워드 */
+.keywordButton-container {
+  position: absolute;
+  top: 139px;
+  left: 23px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 11px; 
+  width: 376px;
+  height: 126px;
+}
+
+.keywordButton {
+  font-size: 15px;
+  border: 1px solid white;
+  border-radius: 20px;
+  color: white;
+  padding: 5px 11px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.recommended-box {
+  position: absolute; 
+  top: 311px;
+  left: 11px;
+  font-size: 20px;
+  color: white;
+}
+
+.my-box {
+  position: absolute; 
+  top: 349px;
+  left: 11px;
+  display: flex;
+  align-items: center; 
+  gap: 17px; 
+  color: white;
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+.my-box img {
+  width: 144px;
+  height: 82px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.my-recommanded-play {
+  width: 40px !important;
+  height: 40px !important;
+  max-width: 40px;
+  max-height: 40px;
+  object-fit: contain;
+  margin-left: 98px;
+}
+
+.oldguard-box {
+  position: absolute; 
+  top: 445px;
+  left: 11px;
+  display: flex;
+  align-items: center; 
+  gap: 17px; 
+  color: white;
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+.oldguard-box img {
+  width: 144px;
+  height: 82px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.oldguard-recommanded-play {
+  width: 40px !important;
+  height: 40px !important;
+  max-width: 40px;
+  max-height: 40px;
+  object-fit: contain;
+  margin-left: 129px;
+}
+
+.youngSheldon-box {
+  position: absolute; 
+  top: 541px;
+  left: 11px;
+  display: flex;
+  align-items: center; 
+  gap: 17px; 
+  color: white;
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+.youngSheldon-box img {
+  width: 144px;
+  height: 82px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.youngSheldon-recommanded-play {
+  width: 40px !important;
+  height: 40px !important;
+  max-width: 40px;
+  max-height: 40px;
+  object-fit: contain;
+  margin-left: 139px;
+}
+
+.haikyu-box {
+  position: absolute; 
+  top: 638px;
+  left: 11px;
+  display: flex;
+  align-items: center; 
+  gap: 17px; 
+  color: white;
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+.haikyu-box img {
+  width: 144px;
+  height: 82px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.haikyu-recommanded-play {
+  width: 40px !important;
+  height: 40px !important;
+  max-width: 40px;
+  max-height: 40px;
+  object-fit: contain;
+  margin-left: 137px;
+}
+
+.bfood-box {
+  position: absolute; 
+  top: 735px;
+  left: 11px;
+  display: flex;
+  align-items: center; 
+  gap: 17px; 
+  color: white;
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+.bfood-box img {
+  width: 144px;
+  height: 82px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.bfood-recommanded-play {
+  width: 40px !important;
+  height: 40px !important;
+  max-width: 40px;
+  max-height: 40px;
+  object-fit: contain;
+  margin-left: 23px;
+}
+
+.doc-box {
+  position: absolute; 
+  top: 831px;
+  left: 11px;
+  display: flex;
+  align-items: center; 
+  gap: 17px; 
+  color: white;
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+.doc-box img {
+  width: 144px;
+  height: 82px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.doc-recommanded-play {
+  width: 40px !important;
+  height: 40px !important;
+  max-width: 40px;
+  max-height: 40px;
+  object-fit: contain;
+  margin-left: 77px;
+}
+
