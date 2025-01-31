@@ -266,3 +266,10 @@ body {
     height: 181px;
     gap: 11px;
 }
+
+.similar-content-image {
+    width: 126px;
+    height: 181px;
+    border-radius: 5px;
+  }
+  
