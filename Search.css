@@ -35,24 +35,24 @@ body {
   font-size: 16px;
   display: flex;
   align-items: center;
-  justify-content: flex-start; 
-  text-align: left; 
-  padding-left: 10px; 
+  justify-content: flex-start; /* 텍스트가 왼쪽에서부터 시작하도록 설정 */
+  text-align: left; /* 텍스트 정렬을 왼쪽으로 설정 */
+  padding-left: 10px; /* 아이콘 공간 확보 */
   overflow: hidden;
 }
 
 .search-box span {
   color: inherit;
-  margin-left: 10px; 
+  margin-left: 10px; /* 텍스트가 아이콘의 오른쪽에 위치하도록 설정 */
 }
 
 
 .graysearch-icon.hidden {
-  display: none; 
+  display: none; /* hidden 클래스가 있을 때 아이콘 숨기기 */
 }
 
 .graysearch-icon.visible {
-  display: block; 
+  display: block; /* visible 클래스가 있을 때 아이콘 보이기 */
 }
 
 
@@ -71,7 +71,7 @@ body {
   left: 23px;
   display: flex;
   flex-wrap: wrap;
-  gap: 11px; 
+  gap: 11px; /*키워드 사이 간격 */
   width: 376px;
   height: 126px;
 }
@@ -103,8 +103,8 @@ body {
   top: 349px;
   left: 11px;
   display: flex;
-  align-items: center; 
-  gap: 17px; 
+  align-items: center; /* 이미지와 텍스트를 수직 정렬 */
+  gap: 17px; /* 이미지와 텍스트 사이 간격 */
   color: white;
   font-size: 14px;
   white-space: nowrap;
@@ -131,8 +131,8 @@ body {
   top: 445px;
   left: 11px;
   display: flex;
-  align-items: center; 
-  gap: 17px; 
+  align-items: center; /* 이미지와 텍스트를 수직 정렬 */
+  gap: 17px; /* 이미지와 텍스트 사이 간격 */
   color: white;
   font-size: 14px;
   white-space: nowrap;
@@ -264,5 +264,12 @@ body {
   max-height: 40px;
   object-fit: contain;
   margin-left: 77px;
+}
+
+.searchResult-box {
+  width: 126px;
+  height: 181px;
+  top: 349px;
+  left: 11px;
 }
 
