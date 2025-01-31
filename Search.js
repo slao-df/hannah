@@ -118,12 +118,20 @@ function Search() {
         </div>
       )}
 
-      {!hideContent && (
-        <>
-          <div className="recommended-box">
-            추천 시리즈 & 영화
-          </div>
+      {!hideContent && selectedKeywords.length === 0 && (
+        <div className="recommended-box">추천 시리즈 & 영화</div>
+      )}
 
+      {!hideContent && selectedKeywords.includes("#청춘") && (
+        <div className="grid-container">
+          {Array.from({ length: 11 }).map((_, index) => (
+            <div key={index} className="gray-box"></div>
+          ))}
+        </div>
+      )}
+
+      {!hideContent && !selectedKeywords.includes("#청춘") && (
+        <>
           <Link to="/Detail">
             <div className="my-box">
               <img src="/images/my.webp" alt="my" />
@@ -136,34 +144,35 @@ function Search() {
             <img src="/images/oldguard.jpeg" alt="oldguard" />
             올드가드
             <img src="/images/recommandedPlay.png" alt="recommandedPlay" className="oldguard-recommanded-play" />
-          </div>
+            </div>
 
-          <div className="youngSheldon-box">
-            <img src="/images/youngSheldon.png" alt="youngSheldon" />
-            영 셸던
-            <img src="/images/recommandedPlay.png" alt="recommandedPlay" className="youngSheldon-recommanded-play" />
-          </div>
+            <div className="youngSheldon-box">
+              <img src="/images/youngSheldon.png" alt="youngSheldon" />
+              영 셸던
+              <img src="/images/recommandedPlay.png" alt="recommandedPlay" className="youngSheldon-recommanded-play" />
+            </div>
 
-          <div className="haikyu-box">
-            <img src="/images/haikyu.jpg" alt="haikyu" />
-            하이큐!!
-            <img src="/images/recommandedPlay.png" alt="recommandedPlay" className="haikyu-recommanded-play" />
-          </div>
+            <div className="haikyu-box">
+              <img src="/images/haikyu.jpg" alt="haikyu" />
+              하이큐!!
+              <img src="/images/recommandedPlay.png" alt="recommandedPlay" className="haikyu-recommanded-play" />
+            </div>
 
-          <div className="bfood-box">
-            <img src="/images/bfood.jpg" alt="bfood" />
-            극장판 짱구는 못말려 21기: <br />
-            엄청 맛있어! B급 음식 <br />
-            서바이벌
-            <img src="/images/recommandedPlay.png" alt="recommandedPlay" className="bfood-recommanded-play" />
-          </div>
+            <div className="bfood-box">
+              <img src="/images/bfood.jpg" alt="bfood" />
+              극장판 짱구는 못말려 21기: <br />
+              엄청 맛있어! B급 음식 <br />
+              서바이벌
+              <img src="/images/recommandedPlay.png" alt="recommandedPlay" className="bfood-recommanded-play" />
+            </div>
 
-          <div className="doc-box">
-            <img src="/images/doc.jpg" alt="doc" />
-            슬기로운 의사생활
-            <img src="/images/recommandedPlay.png" alt="recommandedPlay" className="doc-recommanded-play" />
-          </div>
-        </>
+            <div className="doc-box">
+              <img src="/images/doc.jpg" alt="doc" />
+              슬기로운 의사생활
+              <img src="/images/recommandedPlay.png" alt="recommandedPlay" className="doc-recommanded-play" />
+            </div>
+            </>
+
       )}
     </div>
   );
