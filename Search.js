@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./Search.css";
+import Detail from "./Detail";
 
 function Search() {
+    
   const navigate = useNavigate();
   const [selectedKeywords, setSelectedKeywords] = useState([]);
   const [searchText, setSearchText] = useState("");
@@ -30,6 +32,7 @@ function Search() {
   };
 
   const hideContent = selectedKeywords.length > 0;
+  const showSearchResultBox = selectedKeywords.includes("#청춘");
 
   return (
     <div className="container">
@@ -75,11 +78,27 @@ function Search() {
         ))}
       </div>
 
-      {/* 키워드가 선택되면 "검색 결과"로 표시 */}
       {hideContent ? (
         <div className="recommended-box">검색 결과</div>
       ) : (
         <div className="recommended-box">추천 시리즈 & 영화</div>
+      )}
+
+      {showSearchResultBox && (
+        <div 
+          className="searchResult-box" 
+          style={{
+            position: "absolute",
+            top: "349px",
+            left: "11px",
+            width: "126px",
+            height: "181px",
+            backgroundColor: "white",
+            borderRadius: "5px",
+            cursor: "pointer"
+          }}
+          onClick={() => navigate("/detail")}
+        ></div>
       )}
 
       {!hideContent && (
@@ -128,3 +147,4 @@ function Search() {
 }
 
 export default Search;
+
