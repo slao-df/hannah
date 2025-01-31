@@ -47,7 +47,7 @@ function Detail() {
       </div>
 
       <div className="contents-actors">
-        출연: 여진구, 조이현, 김혜윤 ... 더 보기 <br></br>감독: 서은영
+        출연: 여진구, 조이현, 김혜윤 ... 더 보기 <br />감독: 서은영
       </div>
 
       <img src="/images/listplusButton.png" alt="listplusButton" className="listplusButton-icon" />
@@ -59,6 +59,7 @@ function Detail() {
       <img src="/images/line.png" alt="line" className="line-icon" />
 
       <div className="similar-content">비슷한 콘텐츠</div>
+      <div className="similar-content-box"></div>
     </div>
   );
 }
