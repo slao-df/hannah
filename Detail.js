@@ -59,7 +59,11 @@ function Detail() {
       <img src="/images/line.png" alt="line" className="line-icon" />
 
       <div className="similar-content">비슷한 콘텐츠</div>
-      <div className="similar-content-box"></div>
+      <div className="similar-content-container">
+        <div className="similar-content-box"></div>
+        <div className="similar-content-box" style={{ marginLeft: "141px" }}></div>
+        <div className="similar-content-box" style={{ marginLeft: "282px" }}></div>
+      </div>
     </div>
   );
 }
