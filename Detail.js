@@ -60,9 +60,15 @@ function Detail() {
 
       <div className="similar-content">비슷한 콘텐츠</div>
       <div className="similar-content-container">
-        <div className="similar-content-box"></div>
-        <div className="similar-content-box" style={{ marginLeft: "141px" }}></div>
-        <div className="similar-content-box" style={{ marginLeft: "282px" }}></div>
+        <div className="similar-content-box">
+          <img src="/images/20cgirl.jpg" alt="Similar Content 1" className="similar-content-image" />
+        </div>
+        <div className="similar-content-box" style={{ marginLeft: "15px" }}>
+          <img src="/images/20cgirl.jpg" alt="Similar Content 2" className="similar-content-image" />
+        </div>
+        <div className="similar-content-box" style={{ marginLeft: "15px" }}>
+          <img src="/images/20cgirl.jpg" alt="Similar Content 3" className="similar-content-image" />
+        </div>
       </div>
     </div>
   );
