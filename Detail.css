@@ -155,7 +155,7 @@ body {
     align-items: center; 
     justify-content: center; 
     gap: 6px; 
-    width: 392px; 
+    width: 368px; 
     height: 30px;
     padding-left: 36px; 
 }
@@ -254,4 +254,15 @@ body {
     font-size: 15px;
     top: 755px;
     left: 12.5px;
+}
+
+.similar-content-box {
+    position: absolute;
+    background-color: gray;
+    border-radius: 5px;
+    top: 795px;
+    left: 12.5px;
+    width: 126px;
+    height: 181px;
+    gap: 11px;
 }
